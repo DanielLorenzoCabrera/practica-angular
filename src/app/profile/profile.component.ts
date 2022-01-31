@@ -20,12 +20,13 @@ export class ProfileComponent implements OnInit {
 
     this._githubService.getUser().subscribe((user) =>{
         this.user = user;
-        //console.log(user)
+        console.log(this.user);
       })
 
 
       this._githubService.getRepos().subscribe(repos => {
         this.repos = repos;
+        console.log(this.repos);
       })
 
 
@@ -38,7 +39,6 @@ export class ProfileComponent implements OnInit {
 
      this._githubService.getUser().subscribe((user) =>{
       this.user = user;
-      //console.log(user)
       })
 
 
